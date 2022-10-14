@@ -1,0 +1,27 @@
+<div id="content"></div>
+<p><button class="check"
+        style="width: 500px; height: 50px; background-color: #58ccff; font-size: 25px; font-weight: bold; color: white; border: 0; border-radius: 30px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-decoration: none; margin: auto;"
+        type="button">테스트 링크버ㅇㅇ튼 입니다.<a href="http://www.naver.com" target="_blank"
+            rel="noopener">http://www.naver.com</a></button></p>
+<p><button class="reload"
+        style="width: 500px; height: 50px; background-color: #58ccff; font-size: 25px; font-weight: bold; color: white; border: 0; border-radius: 30px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-decoration: none; margin: auto;"
+        type="button">Reload</button></p>
+<script>
+    var checks = document.getElementsByClassName("check");
+    var myFunction = function () {
+
+        alert("hello");
+        location.reload();
+        document.getElementById("content").innerHTML += "ashdfiuhaiousfhohadsf";
+    };
+    checks[0].addEventListener("click", myFunction);
+
+    var reload = document.getElementsByClassName("reload");
+    var myReload = function () {
+
+        alert("reload");
+        location.reload();
+    };
+    reload[0].addEventListener("click", myReload);
+
+</script>
